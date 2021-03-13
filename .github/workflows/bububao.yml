@@ -27,7 +27,7 @@ jobs:
                   npm install
             - name: "运行 【步步宝】"
               run: |
-                  node /Task/bububao.js
+                  node Task/bububao.js
               env:
                   BBB_bububaoTOKEN: ${{ github.event.client_payload.BBB_bububaoTOKEN || secrets.BBB_bububaoTOKEN }}
                   BBB_CASH: ${{ github.event.client_payload.BBB_CASH || secrets.BBB_CASH }}
